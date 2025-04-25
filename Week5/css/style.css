@@ -1,0 +1,40 @@
+/* 
+  Author: Rebecca Cathey
+  Date: April 23, 2025
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef2f3;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background-color: #007acc;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: auto;
+    padding: 1.5rem;
+  }
+  
+  h1, h2 {
+    color: #004a80;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      padding: 1rem;
+    }
+  }
