@@ -1,0 +1,75 @@
+<!-- 
+  Author: Rebecca Cathey
+  Date: April 23, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chapter 3 - JavaScript Switch Statement Exercise" />
+  <title>Chapter 3: Switch Statement Exercise</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Chapter 3: JavaScript Switch Statement</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>Question</h2>
+      <article>
+        <h3>Q: When would you use a switch statement in your projects?</h3>
+        <p>
+          A: A <code>switch</code> statement is useful when you need to evaluate a single variable against multiple potential values. 
+          It makes your code cleaner and more organized than using multiple if-else-if conditions. For example, you might use it to respond differently based on the day of the week a user enters.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Exercise</h2>
+      <p>Check the browser console after entering your favorite day.</p>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <!-- JavaScript inserted directly into HTML -->
+  <script>
+ 
+    const favDay = prompt("What is your favorite day of the week? (e.g., Monday, Tuesday)");
+
+    switch (favDay.toLowerCase()) {
+      case 'monday':
+        console.log("Ah, Monday – fresh start to a productive week!");
+        break;
+      case 'tuesday':
+        console.log("Tuesday – you're getting into the groove!");
+        break;
+      case 'wednesday':
+        console.log("Wednesday – halfway to the weekend!");
+        break;
+      case 'thursday':
+        console.log("Thursday – almost there!");
+        break;
+      case 'friday':
+        console.log("Friday – time to wrap things up!");
+        break;
+      case 'saturday':
+        console.log("Saturday – time to relax and enjoy!");
+        break;
+      case 'sunday':
+        console.log("Sunday – a great day to recharge for the week ahead.");
+        break;
+      default:
+        console.log("That doesn't seem to be a day of the week. Please check your spelling.");
+    }
+  </script>
+
+</body>
+</html>
