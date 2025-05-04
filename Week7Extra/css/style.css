@@ -1,0 +1,67 @@
+/* 
+  Author: Rebecca Cathey
+  Date: May 4th, 2025
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#chat-area {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    overflow-y: scroll;
+    position: relative;
+}
+
+#chat-area::before {
+    content: "Start chatting...";
+    color: #45369d;
+    font-style: italic;
+    display: block;
+    font-size: 2em;
+}
+
+#chat-area:not(:empty)::before {
+    display: none;
+}
+
+#message-input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+#send-button, #clear-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.message {
+    margin-bottom: 10px;
+    background-color: #e4e4e4;
+    padding: 8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.message p {
+    margin: 0;
+}
+
+.message .remove {
+    float: right;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
