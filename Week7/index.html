@@ -1,0 +1,40 @@
+<!-- 
+  Author: Rebecca Cathey
+  Date: May 4th, 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Week 7 working with a webpage and JavaScript"/>
+  <title> Working with a webpage</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body>
+<h1>To-Do List & Javascript Questions</h1>
+<section>
+    <h2>Questions & Answers</h2>
+        <h3>1. Why is the JavaScript <code>textContent</code> property safer than <code>innerHTML</code>?</h3>
+            <p>
+                The <code>textContent</code> property is safe than <code>innerHTML</code> because it only handles plain text and does not treat content as HTML. As a result, it prevents the execution of embedded scripts, reducing the risk of cross-site scripting attacks. Whereas <code>innerHTML</code> interprets and renders HTML content, which can pose security threats when dealing with untrusted user input.
+            </p>
+        <h3>2. Explain the relationship between an HTML attribute and a corresponding DOM property. Use a specific example.</h3>
+            <p>
+                HTML attributes are the starting values you set in the HTML code, while DOM properties are what JavaScript uses to work with those elements on the page. When a webpage loads, the browser turns attributes into properties so you can interact with them using JavaScript. For example, <code>&lt;input id="myInput" value="Hello"&gt;</code> the <code>value</code> attributes sets the initial text.
+            </p>            
+</section>
+
+<hr>
+
+<section>
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+</section>
+
+<script src="javascript/script.js"></script>
+</body>
