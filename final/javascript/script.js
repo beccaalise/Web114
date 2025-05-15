@@ -127,7 +127,7 @@ const questionPool = {
         question: "What does the && operator do?",
         answer: "logical and",
         fact: "Buenos Aires has the widest street in the world!",
-        image: "assets/aires.PNG",
+        image: "assets/aires.jpg",
         type: "multiple",
         choices: ["logical and", "logical or", "equality", "assignment"]
     },
