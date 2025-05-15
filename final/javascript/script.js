@@ -555,8 +555,12 @@ function displayQuestion() {
 
   document.getElementById("feedback").textContent = "";
   document.getElementById("feedback").className = "";
-  document.getElementById("feedback-img").src = "";
-  document.getElementById("feedback-img").alt = "";
+
+  const feedbackImg = document.getElementById("feedback-img");
+  feedbackImg.src = "";
+  feedbackImg.alt = "";
+  feedbackImg.classList.remove("show");
+  
   document.getElementById("fact").textContent = "";
 
   let categoryMessage = "";
@@ -593,8 +597,12 @@ function checkAnswer() {
     score++;
     feedback.textContent = "✅ Correct!";
     feedback.className = "correct";
-    document.getElementById("feedback-img").src = current.image;
-    document.getElementById("feedback-img").alt = `Image of ${current.location}`;
+
+    const feedbackImg = document.getElementById("feedback-img");
+    feedbackImg.src = current.image;
+    feedbackImg.alt = `Image of ${current.location}`;
+    feedbackImg.classList.add("show");
+    
     document.getElementById("fact").textContent = current.fact;
     addPassportStamp(current.location);
   } else {
