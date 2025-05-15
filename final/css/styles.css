@@ -1,0 +1,260 @@
+:root {
+  --sage-green: #9CAF88;
+  --dusty-blue: #A6C6D6;
+  --beige: #f5f3ef;
+  --variables-color: #E3D3C4;
+  --operators-color: #C3DBD9;
+  --arrays-color: #F0E4CC;
+  --radius: 0.75rem;
+  --padding: 1.5rem;
+  --shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: var(--beige);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+#wrapper {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: var(--padding);
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+header,
+footer {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: var(--sage-green);
+  font-size: 2rem;
+  margin-bottom: 0.25em;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: var(--sage-green);
+  margin-bottom: 1em;
+  border-left: 0.25em solid var(--dusty-blue);
+  padding-left: 0.5em;
+}
+
+#location {
+  color: var(--dusty-blue);
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+#setup-section,
+#quiz-section,
+#summary-section {
+  padding: var(--padding);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+#quiz-section.variables {
+  background-color: var(--variables-color);
+}
+
+#quiz-section.operators {
+  background-color: var(--operators-color);
+}
+
+#quiz-section.arrays {
+  background-color: var(--arrays-color);
+}
+
+#quiz-section.mixed {
+  background-color: var(--beige);
+}
+
+label,
+select,
+button,
+input,
+p {
+  font-size: 1rem;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  margin: 1em 0;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--dusty-blue);
+  color: #333;
+  font-weight: bold;
+  appearance: none;
+  background-image: url("../assets/arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 0.75em center;
+  background-size: 0.6em;
+}
+
+button {
+  background-color: var(--sage-green);
+  color: white;
+  border: none;
+  padding: 0.75em 2em;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.05em;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #7d946e;
+  transform: scale(1.05);
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.2);
+}
+
+#submitBtn {
+  margin-top: 2em;
+}
+
+#feedback {
+  font-weight: bold;
+  padding: 0.75em;
+  border-radius: var(--radius);
+  margin-top: 1em;
+}
+
+#feedback.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+#feedback.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+#feedback-img {
+  max-width: 100%;
+  height: auto;
+  margin: 1em 0;
+  border-radius: var(--radius);
+  border: 0.125em solid var(--dusty-blue);
+}
+
+#fact {
+  margin-top: 1em;
+  font-style: italic;
+  background-color: var(--dusty-blue);
+  color: white;
+  padding: 0.75em;
+  border-radius: var(--radius);
+}
+
+#passport {
+  margin-top: 0.5em;
+  font-size: 1.5rem;
+}
+
+#passport span {
+  display: inline-block;
+  background-color: var(--dusty-blue);
+  color: white;
+  padding: 0.25em 0.5em;
+  border-radius: var(--radius);
+  margin-right: 0.5em;
+  transition: transform 0.2s ease;
+}
+
+#passport span:hover {
+  transform: scale(1.2);
+  background-color: var(--sage-green);
+}
+
+#summary-section {
+  background-color: #f5f5f5;
+}
+
+#summary-section h2 {
+  color: var(--sage-green);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+#summary-list {
+  margin-top: 1rem;
+}
+
+.summary-item {
+  margin-bottom: 1rem;
+  padding: 1em;
+  background-color: white;
+  border-left: 0.375em solid var(--sage-green);
+  border-radius: var(--radius);
+}
+
+.summary-item.correct {
+  border-color: green;
+  background-color: #e6f9ea;
+}
+
+.summary-item.incorrect {
+  border-color: red;
+  background-color: #fbeaea;
+}
+
+#playAgain {
+  margin-top: 2rem;
+  background-color: var(--dusty-blue);
+  font-size: 1rem;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 90%;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  #wrapper {
+    width: 90%;
+    padding: 1em;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 85%;
+  }
+
+  #passport span {
+    font-size: 1.2rem;
+    margin: 0.2em;
+  }
+
+  #feedback-img {
+    max-height: 12rem;
+    object-fit: cover;
+  }
+}
