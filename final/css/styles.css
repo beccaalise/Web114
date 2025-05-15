@@ -106,7 +106,7 @@ select {
   color: #333;
   font-weight: bold;
   appearance: none;
-  background-image: url("../assets/arrow.png");
+  background-image: url("assets/arrow.png");
   background-repeat: no-repeat;
   background-position: right 0.75em center;
   background-size: 0.6em;
