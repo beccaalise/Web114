@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Rebecca Cathey"/>
+  <title>Web 114 Final</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>JavaScript Travel Quiz</h1>
+      <p id="welcome"></p>
+    </header>
+
+    <main>
+      <section id="setup-section">
+        <label for="category">Choose a category:</label>
+        <select id="category">
+          <option value="mixed">🌐 Mixed Review</option>
+          <option value="variables">🧪 Variables & Data Types</option>
+          <option value="operators">⚖️ Operators & Comparisons</option>
+          <option value="arrays">📦 Arrays & Methods</option>
+        </select>
+        <button id="startGame">Start Game</button>
+      </section>
+
+      <section id="quiz-section" style="display:none;">
+        <h2 id="location">Destination</h2>
+        <p id="question">Loading question...</p>
+        <div id="answer-wrapper"></div>
+        <button id="submitBtn">Submit</button>
+        <p id="feedback" class=""></p>
+        <img id="feedback-img" src="" alt="" />
+        <p id="fact"></p>
+
+        <div id="progress">
+          <p>Passport Stamps:</p>
+          <div id="passport"></div>
+        </div>
+
+        <p>Score: <span id="score">0</span></p>
+      </section>
+
+      <section id="summary-section" style="display:none;">
+        <h2>Quiz Summary</h2>
+        <p id="final-score"></p>
+        <div id="summary-list"></div>
+        <button id="playAgain">Play Again</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Rebecca Cathey</p>
+    </footer>
+  </div>
+
+        <script src="javascript/script.js"></script>
+    </body>
+</html>
