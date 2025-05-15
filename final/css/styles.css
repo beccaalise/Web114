@@ -154,11 +154,18 @@ button:hover {
 }
 
 #feedback-img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
   max-width: 100%;
   height: auto;
   margin: 1em 0;
   border-radius: var(--radius);
   border: 0.125em solid var(--dusty-blue);
+  display: block;
+}
+
+#feedback-img.show {
+  opacity: 1;
 }
 
 #fact {
