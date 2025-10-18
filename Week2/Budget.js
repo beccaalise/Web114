@@ -16,3 +16,9 @@ let totalExpenses = housing + food +monthlyUtilities;
 
 /*Calculate Remaining Money*/
 let remainingMoney = totalIncome - totalExpenses;
+
+/*Calculate Percentages*/
+let rentPercentage = (housing / totalIncome) * 100;
+let groceriesPercentage = (food / totalIncome) * 100;
+
+/*Output the Results*/
