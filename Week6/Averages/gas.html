@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Rebecca Cathey">
+    <meta name="date" content="11-7-2025">
+    <title>Weekly Gas Averages</title>
+</head>
+<body>
+
+    <h1>What is the purpose of a function?</h1>
+    <p>A function is a reusable block of code that performs a specific task. You can call a function whenever you need to execute that task without having to rewrite the code each time.</p>
+
+    <script>
+        let username = prompt("What is your name?");
+
+        let entryCount = 0;
+        let total = 0;
+        let weeklyGas = 0;
+
+        weeklyGas = parseFloat(prompt("Enter your first weekly gas total or -1 to end"));
+      
+        while (weeklyGas !== -1) {
+            total += weeklyGas;
+            entryCount++;
+
+            weeklyGas = parseFloat(prompt("Enter next week's gas total or -1 to end"));
+        }
+
+        function calcGasAvg() {
+            let averageGas = 0;
+            if (entryCount > 0) {
+                averageGas = total / entryCount;
+            }
+            return averageGas;
+        }
+
+        let gas = calcGasAvg();
+
+        confirm(username + "'s average weekly gas bill is " + gas.toFixed(2));
+
+        if (entryCount === 0) {
+            confirm("No gas totals were entered.");
+        } else if (entryCount === 1) {
+            confirm(`You entered ${entryCount} gas total.`);
+        } else {
+            confirm(`You entered ${entryCount} gas totals.`);
+        }
+    </script>
+
+</body>
+</html>
+
